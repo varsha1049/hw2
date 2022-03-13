@@ -1,0 +1,205 @@
+:root {
+    --first-color: #bbaa8b;
+    --second-color: #a39dd4;
+    --third-color: #90abc0;
+    --fourth-color: #474b4f;
+    --fifth-color: #6b6e70;
+    --round-corners: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif ,Helvetica, Arial;  
+}
+#portfoliobody{
+    background-color: aliceblue;
+    background-blend-mode:lighten ;
+}
+header {
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.2;
+    color: var(--third-color);
+    background-color: var(--first-color);
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+header a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+header div h1 {
+    font-weight: 500;
+    font-size: 5vw;
+    font-style: italic;
+    text-align: right;
+    width: 100%;
+    justify-content:left;
+    text-shadow: 2px 2px 3px rgba(2, 63, 10, 0.8)
+}
+
+nav{
+    display: flex; 
+    flex-wrap: unwrap;
+    padding-top: 60px;
+    float: left;
+}
+
+nav ul {
+    display: inline;
+    justify-content: space-between;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 2.5vw;
+    line-height: .6;
+    margin-top: 6px;
+}
+
+
+#logo {
+    width: 105px;
+    height: 105px; 
+    float: left;
+    padding-top: 5px;
+}
+
+
+
+.ProfilePic{
+    background-image: url("./IMG-20200904-WA0008.jpg");
+    background-attachment: local;
+    color: var(--first-color);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 250px;
+    background-size: 35%;
+    position: relative;
+    padding-top: 10px;
+    background-color: azure;
+}
+
+.ProfilePic div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-flow: column;
+}
+
+.ProfilePic div p {
+    font-size: 2.5vw;
+    text-align: left;
+    padding-left: 10%;
+  }
+
+.ProfilePic div ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    flex-flow: column;
+    padding-left: 10%;
+}
+
+.ProfilePic div ul li {
+    list-style-type: lower-alpha;
+    padding: 10px;
+    font-size: 2.5vw;
+    line-height: .6;
+    margin-top: 6px;
+}
+
+.about-me{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(./IMG-20181104-WA0009.jpg);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.about-me h2{
+    text-align: center;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.about-me div p{
+    margin-left: 10px;
+  margin-top: 15px;
+  width: 45%;
+  text-align: justify;
+  align-items: center;
+}
+
+#deployed-projects{
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+#deployed-projects h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#deployed-projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#deployed-projects ul li a{
+    text-align: center;
+}
+
+
+#deployed-projects ul li:first-child a img{
+    height: 260px;
+    width: 1200px;
+    margin: 5px;
+  }
+  #deployed-projects ul li a img {
+    height: 200px;
+    width: 250px;
+    margin: 5px;
+  }
+
+
+  #contact-me{
+    display: flex;
+    background-color: #90abc0;
+    background-image: url(./IMG-20200619-WA0056.jpg);
+    justify-content: stretch;
+  }
+
+  #contact-me nav{
+      justify-content: space-between;
+  }
+
+  #contact-me nav div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-left: 5px;
+  }
