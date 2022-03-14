@@ -1,7 +1,7 @@
 :root {
     --first-color: #bbaa8b;
     --second-color: #a39dd4;
-    --third-color: #90abc0;
+    --third-color: #6e44bd;
     --fourth-color: #474b4f;
     --fifth-color: #6b6e70;
     --round-corners: 10px;
@@ -42,36 +42,53 @@ header a {
     text-decoration: none;
 }
 
+header div h1 a {
+    color: var(--third-color);
+    text-decoration: none;
+    padding-left: 900px;
+}
+
 header div h1 {
     font-weight: 500;
     font-size: 5vw;
     font-style: italic;
     text-align: right;
     width: 100%;
-    justify-content:left;
-    text-shadow: 2px 2px 3px rgba(2, 63, 10, 0.8)
+    justify-content:center;
 }
 
 nav{
     display: flex; 
-    flex-wrap: unwrap;
-    padding-top: 60px;
-    float: left;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    float: center;
 }
 
 nav ul {
-    display: inline;
-    justify-content: space-between;
-    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    float: center;
 }
 
 nav ul li {
-    display: inline-block;
+    display: flex;
     list-style-type: none;
-    padding: 10px;
     font-size: 2.5vw;
     line-height: .6;
-    margin-top: 6px;
+    margin-top: 0px;
+    justify-items: stretch;
+    padding-left: 100px;
+}
+
+nav ul li a{
+    color: #3a3897;
+}
+header nav ul li a:hover {
+    color: var(--second-color);
+    border-radius: 20px;
+    text-shadow: none;
+    transform: scale(1.2);
+    box-shadow: inset 120px 20px 20px 0 #2f253f;
 }
 
 
@@ -188,14 +205,12 @@ nav ul li {
 
   #contact-me{
     display: flex;
+    flex-wrap: wrap;
     background-color: #90abc0;
     background-image: url(./IMG-20200619-WA0056.jpg);
     justify-content: stretch;
   }
 
-  #contact-me nav{
-      justify-content: space-between;
-  }
 
   #contact-me nav div {
       display: flex;
@@ -203,3 +218,104 @@ nav ul li {
       justify-content: space-evenly;
       margin-left: 5px;
   }
+  #contact-me h2{
+      display: flex;
+      text-align: center;
+      padding-left: 500px;
+  }
+  #contact-me nav div a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+  @media screen and (min-width: 1065px) {
+
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    header div {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    header div h1 {
+        font-weight: 700;
+        font-size: 3.5vw;
+        text-align: left;
+        margin: 10px;
+    }
+
+    header div h2 {
+        font-weight: 500;
+        font-size: 3vw;
+        text-align: right;        
+        margin: 10px;
+    }
+
+    header nav ul li a {
+        padding: 10px;
+        font-weight: 100;
+        font-size: 2vw;
+    }
+
+    #contact-me h2 {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    #contact-me nav {
+        font-size: 2.5vw;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        align-items: center;
+        align-content: normal;
+        justify-content: space-between;
+    }
+
+    .about-me h2 {
+        font-size: 3.5vw;
+        padding: 10px;
+    }
+
+    .about-me p {
+        font-size: 2vw;
+        padding: 25px 40px;
+    }
+
+    #deployed-projects h2 {
+        font-size: 3.5vw;
+        padding: 10px;
+    }
+
+    #deployed-projects ul li img {
+        height: 300px;
+        width: 270px;
+        margin: 10px;
+    }
+    
+    #deployed-projects ul li a img {
+        height: 300px;
+        width: 540px;
+        margin: 10px;
+    }
+
+    #deployed-projects ul {
+        justify-content: center;
+    }
+
+    .ProfilePic {
+        height: 250px;
+    }
+
+    .ProfilePic div ul li {
+        padding: 10px;
+    }
+
+    .ProfilePic div p {
+        padding: 10px;
+    }
+}
